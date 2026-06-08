@@ -1,18 +1,30 @@
 <!DOCTYPE html>
 <html lang="zh-TW">
 <head>
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=AW-18088168203"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'AW-18088168203');
-</script>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>🌐 網路方案 / 光纖上網 | 台灣大寬頻鳳信</title>
-<meta name="description" content="台灣大寬頻鳳信有線電視，業務高郁峰 0970-677-938，光纖網路、第四台、監視器，服務高雄鳳山大寮仁武林園鳥松大社大樹">
+<title>鳳信套房網路專案｜房東專屬優惠｜每房獨立頻寬固定IP｜高雄台灣大寬頻</title>
+<meta name="description" content="鳳信有線電視套房宿舍網路專案，每房獨立頻寬、獨立固定IP、獨立Wi-Fi、每房獨立報修，房東無須購買頻寬管理器，業務高郁峰 0970-677-938。">
+<meta name="keywords" content="鳳信套房網路,高雄套房網路,鳳山套房寬頻,大寮套房網路,仁武套房網路,房東網路方案,宿舍網路規劃,套房獨立頻寬,高雄套房WiFi,台灣大寬頻套房">
+<meta name="robots" content="index, follow">
+<meta name="author" content="鳳信有線電視 業務高郁峰">
+<link rel="canonical" href="https://kkomr801-sys.github.io/fengs/suite.html">
+<meta property="og:title" content="鳳信套房網路專案｜房東專屬優惠｜高雄台灣大寬頻">
+<meta property="og:description" content="每房獨立頻寬、獨立固定IP、獨立Wi-Fi，房東無須購買頻寬管理器，業務高郁峰 0970-677-938。">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://kkomr801-sys.github.io/fengs/suite.html">
+<meta property="og:site_name" content="鳳信有線電視 業務高郁峰">
+<meta property="og:locale" content="zh_TW">
+<script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "name": "鳳信套房網路專案",
+  "description": "每房獨立頻寬、獨立固定IP、獨立Wi-Fi，適合套房、宿舍、飯店使用",
+  "provider": {"@type": "LocalBusiness", "name": "鳳信有線電視 業務高郁峰", "telephone": "+886-970-677-938"},
+  "areaServed": "高雄市鳳山區、大寮區、仁武區、林園區、鳥松區、大社區、大樹區"
+}</script>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-18088168203"></script>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700;900&family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet">
 <style>
 :root{
@@ -146,7 +158,7 @@ nav{background:var(--white);position:sticky;top:36px;z-index:1000;box-shadow:0 4
 .svc-card:hover .svc-more{gap:10px;}
 
 /* ── PRICE CARDS ── */
-.price-row{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;}
+.price-row{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;}
 .pc{background:var(--white);border-radius:24px;padding:28px 20px;text-align:center;box-shadow:var(--shadow);transition:all .3s;cursor:pointer;border:2px solid transparent;position:relative;overflow:hidden;}
 .pc:hover{transform:translateY(-6px);box-shadow:var(--shadow-hover);}
 .pc.hot{background:linear-gradient(145deg,#fff0f5,#fff);border-color:var(--pink-light);}
@@ -318,9 +330,307 @@ footer{background:var(--ink);padding:48px 24px 80px;}
   .f-links-grid{grid-template-columns:1fr 1fr;}
 }
 @keyframes scroll{from{transform:translateX(0);}to{transform:translateX(-50%);}}
+
+
+/* ── 套房頁專用樣式 ── */
+.suite-hero {
+  background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+  padding: 100px 24px 60px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+.suite-hero::before {
+  content: '🏠';
+  font-size: 300px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0.04;
+  pointer-events: none;
+}
+.suite-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(255,107,157,0.15);
+  border: 1px solid rgba(255,107,157,0.4);
+  border-radius: 100px;
+  padding: 8px 20px;
+  font-size: 12px;
+  font-weight: 800;
+  color: var(--pink);
+  letter-spacing: 1px;
+  margin-bottom: 20px;
+}
+.suite-hero h1 {
+  font-size: clamp(28px,5vw,56px);
+  font-weight: 900;
+  color: #fff;
+  line-height: 1.2;
+  margin-bottom: 16px;
+}
+.suite-hero h1 em {
+  font-style: normal;
+  background: linear-gradient(135deg, var(--pink), var(--orange));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+.suite-hero p {
+  font-size: 15px;
+  color: rgba(255,255,255,0.75);
+  margin-bottom: 32px;
+  line-height: 1.8;
+}
+.suite-hero-btns {
+  display: flex;
+  gap: 14px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.suite-stats {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0;
+  margin-top: 48px;
+  border-top: 1px solid rgba(255,255,255,0.1);
+  padding-top: 32px;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.suite-stat {
+  text-align: center;
+  padding: 0 16px;
+  border-right: 1px solid rgba(255,255,255,0.1);
+}
+.suite-stat:last-child { border: none; }
+.suite-stat .num {
+  font-size: 28px;
+  font-weight: 900;
+  color: var(--yellow);
+  margin-bottom: 4px;
+}
+.suite-stat .lbl { font-size: 12px; color: rgba(255,255,255,0.6); font-weight: 600; }
+
+/* 特色卡片 */
+.feature-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+.feature-card {
+  background: var(--white);
+  border-radius: 20px;
+  padding: 28px 24px;
+  box-shadow: var(--shadow);
+  border: 2px solid transparent;
+  transition: all 0.3s;
+  text-align: center;
+}
+.feature-card:hover {
+  border-color: var(--pink-light);
+  transform: translateY(-6px);
+  box-shadow: var(--shadow-hover);
+}
+.feature-card .ficon {
+  width: 64px;
+  height: 64px;
+  border-radius: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+  margin: 0 auto 16px;
+}
+.feature-card h3 { font-size: 16px; font-weight: 900; margin-bottom: 10px; color: var(--ink); }
+.feature-card p { font-size: 13px; color: var(--gray); line-height: 1.8; }
+
+/* 方案卡片 */
+.suite-plan-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+.suite-plan-card {
+  background: var(--white);
+  border-radius: 24px;
+  padding: 32px 24px;
+  box-shadow: var(--shadow);
+  border: 2px solid var(--pink-light);
+  transition: all 0.3s;
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+}
+.suite-plan-card::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 4px;
+}
+.suite-plan-card.c1::before { background: linear-gradient(90deg, var(--pink), var(--orange)); }
+.suite-plan-card.c2::before { background: linear-gradient(90deg, var(--mint), #26b5ab); }
+.suite-plan-card.c3::before { background: linear-gradient(90deg, var(--purple), var(--pink)); }
+.suite-plan-card:hover { transform: translateY(-6px); box-shadow: var(--shadow-hover); }
+.suite-plan-card .plan-tag {
+  display: inline-block;
+  font-size: 11px;
+  font-weight: 800;
+  padding: 4px 14px;
+  border-radius: 100px;
+  margin-bottom: 16px;
+  letter-spacing: 1px;
+}
+.suite-plan-card .plan-emoji { font-size: 40px; margin-bottom: 12px; }
+.suite-plan-card h3 { font-size: 20px; font-weight: 900; color: var(--ink); margin-bottom: 8px; }
+.suite-plan-card .plan-desc { font-size: 13px; color: var(--gray); line-height: 1.8; margin-bottom: 20px; }
+.suite-plan-card .plan-price {
+  font-size: 13px;
+  background: var(--pink-pale);
+  border-radius: 12px;
+  padding: 14px;
+  margin-bottom: 16px;
+  color: var(--gray);
+  line-height: 1.9;
+}
+.suite-plan-card .plan-price strong { color: var(--pink); font-size: 20px; }
+.plan-features {
+  list-style: none;
+  text-align: left;
+  margin-bottom: 20px;
+}
+.plan-features li {
+  font-size: 13px;
+  color: var(--gray);
+  padding: 6px 0;
+  border-bottom: 1px dashed var(--pink-pale);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.plan-features li:last-child { border: none; }
+.plan-features li::before { content: '✅'; flex-shrink: 0; }
+
+/* 比較表 */
+.compare-wrap {
+  background: var(--white);
+  border-radius: 20px;
+  padding: 32px;
+  box-shadow: var(--shadow);
+}
+.compare-table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  border-radius: 14px;
+  overflow: hidden;
+}
+.compare-table th {
+  padding: 14px 16px;
+  text-align: center;
+  font-size: 13px;
+  font-weight: 800;
+  letter-spacing: 0.5px;
+}
+.compare-table th:first-child {
+  background: var(--ink);
+  color: var(--yellow);
+  text-align: left;
+}
+.compare-table th.th-old { background: #f3f4f6; color: var(--gray); }
+.compare-table th.th-new { background: linear-gradient(135deg, var(--pink), var(--orange)); color: #fff; }
+.compare-table td {
+  padding: 13px 16px;
+  text-align: center;
+  font-size: 13px;
+  border-bottom: 1px solid var(--pink-pale);
+}
+.compare-table td:first-child {
+  text-align: left;
+  font-weight: 700;
+  color: var(--ink);
+  background: #fafafa;
+}
+.compare-table tr:last-child td { border: none; }
+.compare-table .good { color: var(--mint); font-weight: 800; font-size: 15px; }
+.compare-table .bad { color: #dc2626; font-weight: 700; }
+
+/* FAQ */
+.suite-faq { display: flex; flex-direction: column; gap: 12px; }
+.suite-faq .faq-item { background: var(--white); border-radius: 16px; overflow: hidden; box-shadow: 0 2px 12px rgba(255,107,157,0.08); }
+
+/* CTA box */
+.suite-cta {
+  background: linear-gradient(135deg, var(--pink), var(--orange));
+  border-radius: 28px;
+  padding: 48px 40px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+.suite-cta::before {
+  content: '🏠';
+  font-size: 200px;
+  position: absolute;
+  top: 50%;
+  right: -20px;
+  transform: translateY(-50%);
+  opacity: 0.08;
+  pointer-events: none;
+}
+.suite-cta h2 { font-size: clamp(22px,3vw,38px); font-weight: 900; color: #fff; margin-bottom: 12px; position: relative; }
+.suite-cta p { font-size: 14px; color: rgba(255,255,255,0.85); margin-bottom: 28px; position: relative; line-height: 1.9; }
+
+/* 步驟 */
+.steps-grid {
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  gap: 20px;
+}
+.step-card {
+  background: var(--white);
+  border-radius: 20px;
+  padding: 24px;
+  box-shadow: var(--shadow);
+  text-align: center;
+  position: relative;
+}
+.step-card .step-num {
+  width: 36px;
+  height: 36px;
+  background: linear-gradient(135deg, var(--pink), var(--orange));
+  color: #fff;
+  font-weight: 900;
+  font-size: 16px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 12px;
+}
+.step-card .step-icon { font-size: 32px; margin-bottom: 10px; }
+.step-card h4 { font-size: 14px; font-weight: 900; color: var(--ink); margin-bottom: 6px; }
+.step-card p { font-size: 12px; color: var(--gray); line-height: 1.7; }
+
+@media(max-width:900px) {
+  .suite-stats { grid-template-columns: repeat(2,1fr); gap: 16px; }
+  .feature-grid { grid-template-columns: 1fr 1fr; }
+  .suite-plan-grid { grid-template-columns: 1fr; }
+  .steps-grid { grid-template-columns: repeat(2,1fr); }
+}
+@media(max-width:600px) {
+  .feature-grid { grid-template-columns: 1fr; }
+  .suite-stats { grid-template-columns: repeat(2,1fr); }
+  .steps-grid { grid-template-columns: 1fr 1fr; }
+}
 </style>
 </head>
 <body>
+<h1 style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;">鳳信套房網路專案｜房東專屬優惠｜高雄台灣大寬頻</h1>
 <div id="cur"></div>
 <div id="cur2"></div>
 <div class="bubbles" id="bubbles"></div>
@@ -362,7 +672,6 @@ footer{background:var(--ink);padding:48px 24px 80px;}
           <a href="cam.html">🏠 居家防護</a>
         </div>
       </li>
-      <li><a href="suite.html">🏠 套房專案</a></li>
       <li><a href="fee.html">💰 資費方案</a></li>
       <li><a href="faq.html">💬 常見問題</a></li>
       <li><a href="contact.html">📍 聯絡我們</a></li>
@@ -372,34 +681,350 @@ footer{background:var(--ink);padding:48px 24px 80px;}
 </nav>
 
 
-<div id="page-net" style="display:block;">
-<div class="page-header"><div class="breadcrumb">首頁 / 網路方案</div><h1>🌐 網路方案 / 光纖上網</h1><p>Wi-Fi 6 · 最高 1Gbps · 全區安裝</p></div>
-  <div class="container section">
-    <table class="cute-table">
-      <tr><th>網速方案</th><th>單辦網路</th><th>網路＋第四台</th><th>附贈好禮</th></tr>
-      <tr><td>🐢 150M Wi-Fi 6</td><td class="acc">$649/月</td><td>$949/月</td><td>🎬 HBO Max 2年</td></tr>
-      <tr><td>🐇 300M Wi-Fi 6</td><td class="acc">$699/月</td><td>$999/月</td><td>🎬 HBO Max 2年</td></tr>
-      <tr><td>🚀 500M Wi-Fi 6</td><td class="acc">$799/月</td><td>$1,089/月</td><td>🎬 HBO Max 2年</td></tr>
-      <tr><td>⚡ 1G Wi-Fi 6</td><td class="acc">$899/月</td><td>$1,099/月</td><td>🎬 HBO Max 2年</td></tr>
-      <tr style="background:rgba(78,205,196,0.08);"><td>📶 300M/300M <span style="background:rgba(78,205,196,0.2);color:#0a7c76;font-size:11px;padding:2px 8px;border-radius:20px;font-weight:700;">上下對稱</span></td><td class="acc" style="color:var(--mint);">$799/月</td><td style="color:var(--mint);font-weight:700;">$1,099/月</td><td>🎬 HBO Max 2年</td></tr>
-      <tr style="background:rgba(168,85,247,0.08);"><td>🔥 1G / 600M上傳 <span style="background:rgba(168,85,247,0.2);color:#7c3aed;font-size:11px;padding:2px 8px;border-radius:20px;font-weight:700;">超速方案</span></td><td class="acc" style="color:var(--purple);">$999/月</td><td style="color:var(--purple);font-weight:700;">$1,199/月</td><td>🎬 HBO Max 2年</td></tr>
-    </table>
-    <div class="h-box">
-      <strong>🎁 業務3月加碼優惠 — 好禮三選二！</strong><br>
-      ① 🏠 居家關懷室內監視器 1 支<br>
-      ② 🎬 HBO Max 影音串流 24 個月（市價 $2,380）<br>
-      ③ 📶 Mesh Wi-Fi 6 滿屋通（依網速贈 2～3 台）<br>
-      業務加碼贈品 限量 5 名！快來電詢問 😊
-      <span class="big-phone">📞 0970-677-938</span>
+
+<!-- ── HERO ── -->
+<div class="suite-hero">
+  <div class="suite-badge">🏠 房東 / 房客 專屬方案</div>
+  <h1>鳳信<em>套房網路</em>專案<br>房東免煩惱，房客超滿意！</h1>
+  <p>每房獨立頻寬・獨立固定 IP・獨立 Wi-Fi・每房獨立報修<br>不需購買頻寬管理器，省錢又省事，高雄七大區域服務！</p>
+  <div class="suite-hero-btns">
+    <a href="tel:0970677938" class="btn-cute primary" style="font-size:16px;padding:16px 32px;">📞 立即諮詢申辦</a>
+    <a href="#suite-plans" class="btn-cute secondary" style="font-size:15px;padding:15px 28px;">查看方案費用 ↓</a>
+    <a href="#" onclick="openQR();return false" class="btn-cute mint" style="font-size:15px;padding:15px 28px;">💬 LINE 諮詢</a>
+  </div>
+  <div class="suite-stats">
+    <div class="suite-stat">
+      <div class="num">獨立</div>
+      <div class="lbl">每房獨立頻寬</div>
     </div>
-    <h3 style="font-size:18px;font-weight:900;margin:28px 0 14px;">📍 服務範圍</h3>
-    <div class="area-bubbles">
-      <span class="area-bub">鳳山區</span><span class="area-bub">仁武區</span><span class="area-bub">大寮區</span>
-      <span class="area-bub">林園區</span><span class="area-bub">鳥松區</span><span class="area-bub">大社區</span><span class="area-bub">大樹區</span>
+    <div class="suite-stat">
+      <div class="num">固定IP</div>
+      <div class="lbl">每房獨立IP</div>
+    </div>
+    <div class="suite-stat">
+      <div class="num">Wi-Fi 6</div>
+      <div class="lbl">每房獨立無線</div>
+    </div>
+    <div class="suite-stat">
+      <div class="num">7區</div>
+      <div class="lbl">高雄服務範圍</div>
     </div>
   </div>
 </div>
-</div>
+
+<!-- ── 為什麼選擇鳳信套房方案 ── -->
+<section class="section" style="background:var(--white);">
+  <div class="container">
+    <div class="section-header reveal">
+      <div class="section-pill">🌟 六大優勢</div>
+      <h2 class="section-title">為什麼選擇鳳信<em>套房專案</em>？</h2>
+      <p class="section-sub">專為房東設計，解決套房網路的所有難題 💪</p>
+    </div>
+    <div class="feature-grid">
+      <div class="feature-card reveal delay1">
+        <div class="ficon" style="background:linear-gradient(135deg,var(--pink-pale),var(--pink-light));">📶</div>
+        <h3>每房獨立頻寬</h3>
+        <p>每間套房都有自己的頻寬配額，鄰居大量下載也不影響你，房客每天網速穩定，不互相干擾。</p>
+      </div>
+      <div class="feature-card reveal delay2">
+        <div class="ficon" style="background:linear-gradient(135deg,var(--mint-pale),var(--mint-light));">🌐</div>
+        <h3>獨立固定 IP</h3>
+        <p>每房配備專屬固定 IP，適合需要遠端工作、視訊會議、連線遊戲的房客，穩定不中斷。</p>
+      </div>
+      <div class="feature-card reveal delay3">
+        <div class="ficon" style="background:linear-gradient(135deg,var(--yellow-light),var(--orange-light));">📡</div>
+        <h3>每房獨立 Wi-Fi</h3>
+        <p>每間套房配備獨立無線路由器，房客自行管理密碼，隱私有保障，訊號不與他房共用。</p>
+      </div>
+      <div class="feature-card reveal delay1">
+        <div class="ficon" style="background:linear-gradient(135deg,var(--purple-light),#d8b4fe);">🔧</div>
+        <h3>每房獨立報修</h3>
+        <p>房客可以直接聯繫鳳信客服報修，不需透過房東轉達，維修更快速，房東不需費心處理。</p>
+      </div>
+      <div class="feature-card reveal delay2">
+        <div class="ficon" style="background:linear-gradient(135deg,var(--pink-pale),var(--yellow-light));">💰</div>
+        <h3>免買頻寬管理器</h3>
+        <p>傳統套房需購買頻寬管理器分配網路，費用昂貴且需要維護。鳳信套房方案免去這筆費用！</p>
+      </div>
+      <div class="feature-card reveal delay3">
+        <div class="ficon" style="background:linear-gradient(135deg,var(--mint-pale),var(--blue-light));">🚀</div>
+        <h3>統一施工規劃</h3>
+        <p>業務到府評估，統一規劃網路線路，施工整齊美觀，避免裝潢後封住管線的問題。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── 傳統方案 vs 鳳信套房方案比較 ── -->
+<section class="section">
+  <div class="container">
+    <div class="section-header reveal">
+      <div class="section-pill">⚖️ 方案比較</div>
+      <h2 class="section-title">傳統網路 vs <em>鳳信套房方案</em></h2>
+      <p class="section-sub">一眼看出差異，選擇更聰明的方案 😊</p>
+    </div>
+    <div class="compare-wrap reveal">
+      <table class="compare-table">
+        <tr>
+          <th>比較項目</th>
+          <th class="th-old">❌ 傳統共用網路</th>
+          <th class="th-new">✅ 鳳信套房專案</th>
+        </tr>
+        <tr>
+          <td>頻寬分配</td>
+          <td class="bad">所有人共用，容易塞車</td>
+          <td class="good">每房獨立頻寬</td>
+        </tr>
+        <tr>
+          <td>IP 位址</td>
+          <td class="bad">共用 IP，安全性低</td>
+          <td class="good">每房獨立固定 IP</td>
+        </tr>
+        <tr>
+          <td>Wi-Fi 管理</td>
+          <td class="bad">全棟共用，密碼外流</td>
+          <td class="good">每房獨立 Wi-Fi</td>
+        </tr>
+        <tr>
+          <td>報修方式</td>
+          <td class="bad">房客找房東，房東再聯繫</td>
+          <td class="good">房客直接報修，快速解決</td>
+        </tr>
+        <tr>
+          <td>頻寬管理器</td>
+          <td class="bad">需自費購買 $5,000～$30,000+</td>
+          <td class="good">完全不需要購買</td>
+        </tr>
+        <tr>
+          <td>房東管理負擔</td>
+          <td class="bad">需要自行維護管理</td>
+          <td class="good">交給鳳信，輕鬆管理</td>
+        </tr>
+        <tr>
+          <td>房客滿意度</td>
+          <td class="bad">常抱怨網路慢、不穩定</td>
+          <td class="good">每房獨立，房客滿意</td>
+        </tr>
+        <tr>
+          <td>施工規劃</td>
+          <td class="bad">自行找人施工，品質不一</td>
+          <td class="good">業務到府評估，專業施工</td>
+        </tr>
+      </table>
+    </div>
+  </div>
+</section>
+
+<!-- ── 套房方案 ── -->
+<section id="suite-plans" class="section" style="background:var(--white);">
+  <div class="container">
+    <div class="section-header reveal">
+      <div class="section-pill">💰 套房方案</div>
+      <h2 class="section-title">鳳信套房<em>三大方案</em></h2>
+      <p class="section-sub">依套房數量與需求，選擇最適合的方案，詳細費用歡迎來電洽詢 😊</p>
+    </div>
+    <div class="suite-plan-grid">
+
+      <!-- 小套房方案 -->
+      <div class="suite-plan-card c1 reveal delay1">
+        <div class="plan-tag" style="background:var(--pink-pale);color:var(--pink);">🏠 小型套房</div>
+        <div class="plan-emoji">🏠</div>
+        <h3>基礎套房方案</h3>
+        <p class="plan-desc">適合 3～10 間套房，每房獨立頻寬，房東免管理，最適合入門的套房方案。</p>
+        <div class="plan-price">
+          每房月租費<br>
+          <strong>$149</strong> 起 / 房<br>
+          <span style="font-size:11px;">（依申辦房數與速率而定）</span>
+        </div>
+        <ul class="plan-features">
+          <li>每房獨立頻寬（150M 起）</li>
+          <li>每房獨立固定 IP</li>
+          <li>每房獨立 Wi-Fi 路由器</li>
+          <li>每房獨立報修服務</li>
+          <li>免費統一佈線規劃</li>
+        </ul>
+        <a href="tel:0970677938" class="btn-cute primary" style="width:100%;justify-content:center;font-size:14px;">📞 洽詢方案</a>
+      </div>
+
+      <!-- 中型套房 -->
+      <div class="suite-plan-card c2 reveal delay2">
+        <div class="plan-tag" style="background:var(--mint-pale);color:#0f9b94;">🏢 中型套房</div>
+        <div class="plan-emoji">🏢</div>
+        <h3>進階套房方案</h3>
+        <p class="plan-desc">適合 10～30 間套房，高速方案搭配第四台電視，提升租房競爭力。</p>
+        <div class="plan-price" style="background:var(--mint-pale);">
+          每房月租費<br>
+          <strong style="color:var(--mint);">$199</strong> 起 / 房<br>
+          <span style="font-size:11px;">（依申辦房數與速率而定）</span>
+        </div>
+        <ul class="plan-features">
+          <li>每房獨立頻寬（300M 起）</li>
+          <li>每房獨立固定 IP</li>
+          <li>每房獨立 Wi-Fi 6 路由器</li>
+          <li>每房獨立報修服務</li>
+          <li>可加購第四台有線電視</li>
+          <li>免費統一佈線規劃</li>
+        </ul>
+        <a href="tel:0970677938" class="btn-cute mint" style="width:100%;justify-content:center;font-size:14px;">📞 洽詢方案</a>
+      </div>
+
+      <!-- 大型宿舍/飯店 -->
+      <div class="suite-plan-card c3 reveal delay3">
+        <div class="plan-tag" style="background:var(--purple-light);color:#7c3aed;">🏨 宿舍／飯店</div>
+        <div class="plan-emoji">🏨</div>
+        <h3>宿舍飯店方案</h3>
+        <p class="plan-desc">適合 30 間以上大型宿舍、商務飯店，客製化規劃，可搭配門禁對講機系統。</p>
+        <div class="plan-price" style="background:var(--purple-light);">
+          量身訂製<br>
+          <strong style="color:var(--purple);">歡迎來電</strong><br>
+          <span style="font-size:11px;">依規模客製化報價</span>
+        </div>
+        <ul class="plan-features">
+          <li>每房獨立高速頻寬（500M/1G）</li>
+          <li>每房獨立固定 IP</li>
+          <li>每房獨立 Wi-Fi 6 路由器</li>
+          <li>每房獨立報修服務</li>
+          <li>可搭配門禁對講機系統</li>
+          <li>可搭配 AI 監視器方案</li>
+          <li>可搭配第四台有線電視</li>
+          <li>免費到府評估規劃</li>
+        </ul>
+        <a href="tel:0970677938" class="btn-cute" style="background:linear-gradient(135deg,var(--purple),#9333ea);color:#fff;width:100%;justify-content:center;font-size:14px;">📞 免費到府評估</a>
+      </div>
+
+    </div>
+    <div style="background:linear-gradient(135deg,var(--pink-pale),var(--yellow-light));border-radius:16px;padding:20px 24px;margin-top:24px;border:1.5px dashed var(--pink-light);font-size:14px;color:var(--gray);line-height:1.9;text-align:center;" class="reveal">
+      ⚠️ 以上費用為參考價，實際方案依套房數量、樓層、速率及是否搭配其他服務而定<br>
+      <strong style="color:var(--pink);">歡迎電洽業務高郁峰 0970-677-938，免費到府評估，提供最優惠報價！</strong>
+    </div>
+  </div>
+</section>
+
+<!-- ── 申辦流程 ── -->
+<section class="section">
+  <div class="container">
+    <div class="section-header reveal">
+      <div class="section-pill">📋 申辦步驟</div>
+      <h2 class="section-title">四步驟輕鬆<em>完成申辦</em></h2>
+      <p class="section-sub">從聯繫到安裝完成，最快 3 天搞定！</p>
+    </div>
+    <div class="steps-grid">
+      <div class="step-card reveal delay1">
+        <div class="step-num">1</div>
+        <div class="step-icon">📞</div>
+        <h4>來電 / LINE 洽詢</h4>
+        <p>電洽業務高郁峰 0970-677-938，或掃描 LINE QR Code，說明套房數量與需求</p>
+      </div>
+      <div class="step-card reveal delay2">
+        <div class="step-num">2</div>
+        <div class="step-icon">🏠</div>
+        <h4>免費到府評估</h4>
+        <p>業務到府勘察現場，了解套房格局、樓層數量，規劃最適合的網路配置方案</p>
+      </div>
+      <div class="step-card reveal delay3">
+        <div class="step-num">3</div>
+        <div class="step-icon">📝</div>
+        <h4>確認方案簽約</h4>
+        <p>確認方案內容、費用、施工時間，完成申辦手續，安排工程師施工時間</p>
+      </div>
+      <div class="step-card reveal delay3">
+        <div class="step-num">4</div>
+        <div class="step-icon">🚀</div>
+        <h4>到府施工開通</h4>
+        <p>專業工程師到府施工，完成每房網路線路配置，開通測速確認後交付使用</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── 適合對象 ── -->
+<section class="section" style="background:var(--white);">
+  <div class="container">
+    <div class="section-header reveal">
+      <div class="section-pill">👥 適合對象</div>
+      <h2 class="section-title">哪些人<em>適合</em>鳳信套房方案？</h2>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:20px;" class="reveal">
+      <div style="background:var(--pink-pale);border-radius:20px;padding:28px;border:1.5px solid var(--pink-light);text-align:center;">
+        <div style="font-size:48px;margin-bottom:14px;">🏘️</div>
+        <h3 style="font-size:16px;font-weight:900;color:var(--ink);margin-bottom:10px;">套房房東</h3>
+        <p style="font-size:13px;color:var(--gray);line-height:1.8;">有多間套房出租，想提供每房獨立網路，提升租房吸引力，不想自己管理網路問題的房東。</p>
+      </div>
+      <div style="background:var(--mint-pale);border-radius:20px;padding:28px;border:1.5px solid var(--mint-light);text-align:center;">
+        <div style="font-size:48px;margin-bottom:14px;">🏫</div>
+        <h3 style="font-size:16px;font-weight:900;color:var(--ink);margin-bottom:10px;">宿舍管理者</h3>
+        <p style="font-size:13px;color:var(--gray);line-height:1.8;">管理學生宿舍、員工宿舍，需要為每位住戶提供獨立網路連線，且要方便管理報修。</p>
+      </div>
+      <div style="background:var(--yellow-light);border-radius:20px;padding:28px;border:1.5px solid #fde68a;text-align:center;">
+        <div style="font-size:48px;margin-bottom:14px;">🏨</div>
+        <h3 style="font-size:16px;font-weight:900;color:var(--ink);margin-bottom:10px;">小型飯店民宿</h3>
+        <p style="font-size:13px;color:var(--gray);line-height:1.8;">商務飯店、民宿需要為每個房間提供獨立穩定的網路連線，提升住客滿意度與評分。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── 常見問題 ── -->
+<section class="section">
+  <div class="container">
+    <div class="section-header reveal">
+      <div class="section-pill">❓ 常見問題</div>
+      <h2 class="section-title">套房方案<em>常見 Q&amp;A</em></h2>
+    </div>
+    <div class="suite-faq reveal">
+      <div class="faq-item">
+        <div class="faq-q" onclick="doFaq(this)">套房方案最少幾房才能申辦？<span class="fq-icon">＋</span></div>
+        <div class="faq-a">最少 3 房即可申辦，房數越多每房費用越划算。歡迎來電 0970-677-938 詢問最新優惠方案！</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q" onclick="doFaq(this)">每房的網路費用由誰繳納，房東還是房客？<span class="fq-icon">＋</span></div>
+        <div class="faq-a">可以由房東統一繳納後向房客收取，也可以由各房客個別向鳳信繳費，彈性安排，依雙方協議而定。</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q" onclick="doFaq(this)">套房網路的速率可以選擇嗎？<span class="fq-icon">＋</span></div>
+        <div class="faq-a">可以！每房可以選擇不同速率，150M、300M、500M、1G 等方案皆可申辦，依房客需求彈性搭配。</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q" onclick="doFaq(this)">施工需要多長時間？會影響現有住戶嗎？<span class="fq-icon">＋</span></div>
+        <div class="faq-a">依套房數量而定，一般 3～5 間套房約半天完成。業務會安排在不影響住戶的時間施工，最大程度減少干擾。</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q" onclick="doFaq(this)">可以搭配有線電視或監視器嗎？<span class="fq-icon">＋</span></div>
+        <div class="faq-a">可以！套房方案可以加購鳳信第四台有線電視，也可以搭配 AI 監視器方案，一次滿足所有需求，歡迎來電詢問組合優惠。</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q" onclick="doFaq(this)">如果有房客退租，該房的網路怎麼辦？<span class="fq-icon">＋</span></div>
+        <div class="faq-a">可以辦理暫停（停機），3 個月內復機免費，超過 3 個月復機費 $200，靈活彈性，不需要擔心空房期的費用問題。</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q" onclick="doFaq(this)">服務範圍有哪些？<span class="fq-icon">＋</span></div>
+        <div class="faq-a">鳳信套房方案服務高雄市：鳳山區、大寮區、仁武區、林園區、鳥松區、大社區、大樹區。</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── CTA ── -->
+<section class="section" style="background:var(--white);">
+  <div class="container">
+    <div class="suite-cta reveal">
+      <h2>🏠 免費到府評估，今天就聯繫我們！</h2>
+      <p>
+        業務高郁峰 專人服務 · 365天全年無休<br>
+        服務高雄鳳山、大寮、仁武、林園、鳥松、大社、大樹七大區域<br>
+        提供套房、宿舍、飯店網路規劃到府評估，報價透明，歡迎比較！
+      </p>
+      <div style="display:flex;gap:16px;justify-content:center;flex-wrap:wrap;position:relative;">
+        <a href="tel:0970677938" class="btn-cute" style="background:#fff;color:var(--pink);font-size:18px;font-weight:900;padding:18px 36px;border-radius:16px;box-shadow:0 4px 20px rgba(0,0,0,0.15);">📞 0970-677-938</a>
+        <a href="#" onclick="openQR();return false" class="btn-cute" style="background:rgba(255,255,255,0.2);color:#fff;font-size:15px;padding:17px 28px;border-radius:16px;border:2px solid rgba(255,255,255,0.5);">💬 LINE QR 掃我</a>
+      </div>
+      <div style="margin-top:24px;font-size:13px;color:rgba(255,255,255,0.7);position:relative;">
+        📍 高雄市大寮區鳳屏一路 312 號 ｜ 🕐 服務時間 09:00–21:00
+      </div>
+    </div>
+  </div>
+</section>
+
 <!-- FIXED BAR -->
 <div class="fixed-bar">
   <a href="#" onclick="openQR();return false"><span class="fb-ico">💬</span>LINE諮詢</a>
@@ -449,45 +1074,15 @@ footer{background:var(--ink);padding:48px 24px 80px;}
 
 <script>
 
-// Cursor
 var c1=document.getElementById('cur'),c2=document.getElementById('cur2');
-if(c1&&c2){
-  document.addEventListener('mousemove',function(e){
-    c1.style.left=e.clientX+'px';c1.style.top=e.clientY+'px';
-    c2.style.left=e.clientX+'px';c2.style.top=e.clientY+'px';
-  });
-  document.addEventListener('mousedown',function(){c1.style.transform='translate(-50%,-50%) scale(0.6)';});
-  document.addEventListener('mouseup',function(){c1.style.transform='translate(-50%,-50%) scale(1)';});
-}
-
-// Bubbles
-(function(){
-  var colors=['#ff6b9d','#ffd93d','#4ecdc4','#ff9a3c','#a855f7','#3b82f6'];
-  var wrap=document.getElementById('bubbles');
-  if(!wrap)return;
-  for(var i=0;i<18;i++){
-    var b=document.createElement('div');
-    b.className='bubble';
-    var size=Math.random()*60+20;
-    b.style.cssText='width:'+size+'px;height:'+size+'px;left:'+Math.random()*100+'%;background:'+colors[Math.floor(Math.random()*colors.length)]+';animation-duration:'+(Math.random()*20+15)+'s;animation-delay:'+(Math.random()*15)+'s;';
-    wrap.appendChild(b);
-  }
-})();
-
-// FAQ
-function doFaq(el){el.parentElement.classList.toggle('open');}
-
-// QR Modal
+if(c1&&c2){document.addEventListener('mousemove',function(e){c1.style.left=e.clientX+'px';c1.style.top=e.clientY+'px';c2.style.left=e.clientX+'px';c2.style.top=e.clientY+'px';});}
+(function(){var colors=['#ff6b9d','#ffd93d','#4ecdc4','#ff9a3c','#a855f7','#3b82f6'];var wrap=document.getElementById('bubbles');if(!wrap)return;for(var i=0;i<18;i++){var b=document.createElement('div');b.className='bubble';var size=Math.random()*60+20;b.style.cssText='width:'+size+'px;height:'+size+'px;left:'+Math.random()*100+'%;background:'+colors[Math.floor(Math.random()*colors.length)]+';animation-duration:'+(Math.random()*20+15)+'s;animation-delay:'+(Math.random()*15)+'s;';wrap.appendChild(b);}})();
 function openQR(){document.getElementById('qr-modal').classList.add('show');}
 function closeQR(){document.getElementById('qr-modal').classList.remove('show');}
-
-// Scroll reveal
-var obs=new IntersectionObserver(function(entries){
-  entries.forEach(function(e){if(e.isIntersecting)e.target.classList.add('visible');});
-},{threshold:0.12});
+var obs=new IntersectionObserver(function(entries){entries.forEach(function(e){if(e.isIntersecting)e.target.classList.add('visible');});},{threshold:0.12});
 document.querySelectorAll('.reveal').forEach(function(el){obs.observe(el);});
 
-
+function doFaq(el){el.parentElement.classList.toggle('open');}
 </script>
 </body>
 </html>
