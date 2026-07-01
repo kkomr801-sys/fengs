@@ -394,7 +394,7 @@ footer{background:var(--ink);padding:48px 24px 80px;}
 </div>
 <!-- FIXED BAR -->
 <div class="fixed-bar">
-  <a href="#" onclick="openQR();return false"><span class="fb-ico">💬</span>LINE諮詢</a>
+  <a href="#" onclick="openLINE();return false"><span class="fb-ico">💬</span>LINE諮詢</a>
   <a href="tel:0970677938" class="hot-fb"><span class="fb-ico">📞</span>來電申辦</a>
   <a href="plan.html"><span class="fb-ico">✨</span>查看方案</a>
   <a href="tel:0809000258"><span class="fb-ico">🔧</span>維修客服</a>
@@ -471,6 +471,13 @@ function doFaq(el){el.parentElement.classList.toggle('open');}
 
 // QR Modal
 function openQR(){document.getElementById('qr-modal').classList.add('show');}
+function openLINE(){
+  if(/iPhone|iPad|iPod|Android|Mobile/i.test(navigator.userAgent)){
+    window.location.href='https://lin.ee/uqkayko';
+  } else {
+    openQR();
+  }
+}
 function closeQR(){document.getElementById('qr-modal').classList.remove('show');}
 
 // Scroll reveal

@@ -690,7 +690,7 @@ footer{background:var(--ink);padding:48px 24px 80px;}
   <div class="suite-hero-btns">
     <a href="tel:0970677938" class="btn-cute primary" style="font-size:16px;padding:16px 32px;">📞 立即諮詢申辦</a>
     <a href="#suite-plans" class="btn-cute secondary" style="font-size:15px;padding:15px 28px;">查看方案費用 ↓</a>
-    <a href="#" onclick="openQR();return false" class="btn-cute mint" style="font-size:15px;padding:15px 28px;">💬 LINE 諮詢</a>
+    <a href="#" onclick="openLINE();return false" class="btn-cute mint" style="font-size:15px;padding:15px 28px;">💬 LINE 諮詢</a>
   </div>
   <div class="suite-stats">
     <div class="suite-stat">
@@ -1016,7 +1016,7 @@ footer{background:var(--ink);padding:48px 24px 80px;}
       </p>
       <div style="display:flex;gap:16px;justify-content:center;flex-wrap:wrap;position:relative;">
         <a href="tel:0970677938" class="btn-cute" style="background:#fff;color:var(--pink);font-size:18px;font-weight:900;padding:18px 36px;border-radius:16px;box-shadow:0 4px 20px rgba(0,0,0,0.15);">📞 0970-677-938</a>
-        <a href="#" onclick="openQR();return false" class="btn-cute" style="background:rgba(255,255,255,0.2);color:#fff;font-size:15px;padding:17px 28px;border-radius:16px;border:2px solid rgba(255,255,255,0.5);">💬 LINE QR 掃我</a>
+        <a href="#" onclick="openLINE();return false" class="btn-cute" style="background:rgba(255,255,255,0.2);color:#fff;font-size:15px;padding:17px 28px;border-radius:16px;border:2px solid rgba(255,255,255,0.5);">💬 LINE QR 掃我</a>
       </div>
       <div style="margin-top:24px;font-size:13px;color:rgba(255,255,255,0.7);position:relative;">
         📍 高雄市大寮區鳳屏一路 312 號 ｜ 🕐 服務時間 09:00–21:00
@@ -1027,7 +1027,7 @@ footer{background:var(--ink);padding:48px 24px 80px;}
 
 <!-- FIXED BAR -->
 <div class="fixed-bar">
-  <a href="#" onclick="openQR();return false"><span class="fb-ico">💬</span>LINE諮詢</a>
+  <a href="#" onclick="openLINE();return false"><span class="fb-ico">💬</span>LINE諮詢</a>
   <a href="tel:0970677938" class="hot-fb"><span class="fb-ico">📞</span>來電申辦</a>
   <a href="plan.html"><span class="fb-ico">✨</span>查看方案</a>
   <a href="tel:0809000258"><span class="fb-ico">🔧</span>維修客服</a>
@@ -1078,6 +1078,13 @@ var c1=document.getElementById('cur'),c2=document.getElementById('cur2');
 if(c1&&c2){document.addEventListener('mousemove',function(e){c1.style.left=e.clientX+'px';c1.style.top=e.clientY+'px';c2.style.left=e.clientX+'px';c2.style.top=e.clientY+'px';});}
 (function(){var colors=['#ff6b9d','#ffd93d','#4ecdc4','#ff9a3c','#a855f7','#3b82f6'];var wrap=document.getElementById('bubbles');if(!wrap)return;for(var i=0;i<18;i++){var b=document.createElement('div');b.className='bubble';var size=Math.random()*60+20;b.style.cssText='width:'+size+'px;height:'+size+'px;left:'+Math.random()*100+'%;background:'+colors[Math.floor(Math.random()*colors.length)]+';animation-duration:'+(Math.random()*20+15)+'s;animation-delay:'+(Math.random()*15)+'s;';wrap.appendChild(b);}})();
 function openQR(){document.getElementById('qr-modal').classList.add('show');}
+function openLINE(){
+  if(/iPhone|iPad|iPod|Android|Mobile/i.test(navigator.userAgent)){
+    window.location.href='https://lin.ee/uqkayko';
+  } else {
+    openQR();
+  }
+}
 function closeQR(){document.getElementById('qr-modal').classList.remove('show');}
 var obs=new IntersectionObserver(function(entries){entries.forEach(function(e){if(e.isIntersecting)e.target.classList.add('visible');});},{threshold:0.12});
 document.querySelectorAll('.reveal').forEach(function(el){obs.observe(el);});
