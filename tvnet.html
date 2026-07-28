@@ -1,6 +1,22 @@
 <!DOCTYPE html>
 <html lang="zh-TW">
 <head>
+<script>
+window.addEventListener('load', function () {
+document.querySelectorAll('a[href*="tel:"]').forEach(function (e) {
+e.addEventListener('click', function (e) {
+gtag('event', 'conversion', { 'send_to': 'AW-18088168203/qGZ2CNyj2NccEIuWjrFD' });
+});
+});
+
+document.querySelectorAll('a[onclick="openLINE();return false"]').forEach(function (e) {
+e.addEventListener('click', function (e) {
+gtag('event', 'conversion', { 'send_to': 'AW-18088168203/JRPtCN-j2NccEIuWjrFD' });
+});
+});
+});
+</script>
+
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=AW-18088168203"></script>
 <script>

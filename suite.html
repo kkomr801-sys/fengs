@@ -1,6 +1,22 @@
 <!DOCTYPE html>
 <html lang="zh-TW">
 <head>
+<script>
+window.addEventListener('load', function () {
+document.querySelectorAll('a[href*="tel:"]').forEach(function (e) {
+e.addEventListener('click', function (e) {
+gtag('event', 'conversion', { 'send_to': 'AW-18088168203/qGZ2CNyj2NccEIuWjrFD' });
+});
+});
+
+document.querySelectorAll('a[onclick="openLINE();return false"]').forEach(function (e) {
+e.addEventListener('click', function (e) {
+gtag('event', 'conversion', { 'send_to': 'AW-18088168203/JRPtCN-j2NccEIuWjrFD' });
+});
+});
+});
+</script>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>鳳信套房網路專案｜房東專屬優惠｜每房獨立頻寬固定IP｜高雄台灣大寬頻</title>
